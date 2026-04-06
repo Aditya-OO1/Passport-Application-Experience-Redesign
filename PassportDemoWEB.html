@@ -42,12 +42,12 @@
 
   h1,h2,h3,h4 { font-family: 'Fraunces', serif; }
 
-  /* ── SCREENS ── */
+
   .screen { display: none; min-height: 100vh; animation: fadeIn 0.4s ease; }
   .screen.active { display: block; }
   @keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
 
-  /* ── NAVBAR ── */
+
   .navbar {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     background: rgba(10,22,40,0.96);
@@ -94,7 +94,6 @@
     font-size: 14px; font-weight: 600; color: white; cursor: pointer;
   }
 
-  /* ── HERO ── */
   #screen-home {
     background: var(--navy);
     padding-top: 64px;
@@ -193,7 +192,6 @@
   .status-text strong { color: white; font-size: 14px; font-weight: 500; }
   .status-text p { color: rgba(255,255,255,0.5); font-size: 12px; margin-top: 2px; }
 
-  /* ── HOW IT WORKS ── */
   .section-home {
     background: var(--cream);
     padding: 80px;
@@ -229,7 +227,6 @@
   .step-card h3 { font-size: 18px; color: var(--navy); margin-bottom: 10px; }
   .step-card p { font-size: 14px; color: var(--text-light); line-height: 1.6; }
 
-  /* ── FEATURES STRIP ── */
   .features-strip {
     background: var(--navy-mid);
     padding: 48px 80px;
@@ -240,7 +237,6 @@
   .feature-item h4 { color: white; font-size: 15px; margin-bottom: 6px; }
   .feature-item p { color: rgba(255,255,255,0.5); font-size: 13px; line-height: 1.5; }
 
-  /* ── AUTH ── */
   #screen-auth {
     background: var(--navy);
     display: flex; align-items: center; justify-content: center;
@@ -314,7 +310,7 @@
   .demo-login:hover { background: var(--cream-dark); }
   .demo-login strong { color: var(--navy); }
 
-  /* ── ONBOARDING ── */
+
   #screen-onboard {
     background: var(--navy);
     display: flex; align-items: center; justify-content: center;
@@ -366,7 +362,6 @@
     font-size: 13px; font-weight: 500; text-align: center; margin-bottom: 24px;
   }
 
-  /* ── DASHBOARD ── */
   #screen-dashboard { padding-top: 64px; background: var(--cream); min-height: 100vh; }
   .dashboard-layout {
     display: grid; grid-template-columns: 260px 1fr;
@@ -477,7 +472,7 @@
   .qa-icon { font-size: 28px; margin-bottom: 10px; }
   .qa-btn p { font-size: 13px; font-weight: 600; color: var(--navy); }
 
-  /* ── APPLICATION FORM ── */
+
   #screen-form { padding-top: 64px; background: var(--cream); min-height: 100vh; }
   .form-layout {
     max-width: 860px; margin: 0 auto; padding: 40px 20px;
@@ -603,7 +598,6 @@
   }
   .btn-next:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(26,79,214,0.3); }
 
-  /* ── DOCUMENT UPLOAD ── */
   .doc-checklist { display: flex; flex-direction: column; gap: 14px; margin-bottom: 28px; }
   .doc-item {
     border: 1.5px solid var(--border); border-radius: 14px; padding: 18px 20px;
@@ -646,7 +640,6 @@
     font-weight: 600; color: var(--text-light);
   }
 
-  /* ── APPOINTMENT ── */
   .appt-layout { display: grid; grid-template-columns: 1fr 340px; gap: 24px; }
   .calendar-card {
     background: white; border-radius: var(--radius); padding: 28px;
@@ -709,7 +702,6 @@
   .summary-row .value { color: var(--navy); font-weight: 600; text-align: right; max-width: 180px; }
   .pasport-office-select { margin-bottom: 24px; }
 
-  /* ── CONFIRMATION ── */
   #screen-confirm { padding-top: 64px; background: var(--cream); min-height: 100vh; }
   .confirm-layout {
     max-width: 700px; margin: 0 auto; padding: 60px 20px;
@@ -780,7 +772,6 @@
   }
   .next-step-item::before { content: '→'; color: var(--blue); flex-shrink: 0; margin-top: 1px; }
 
-  /* ── TOAST ── */
   .toast {
     position: fixed; bottom: 32px; right: 32px; z-index: 9999;
     background: var(--navy); color: white; padding: 14px 20px;
@@ -794,7 +785,7 @@
   .toast.success .ti { color: #4ade80; }
   .toast.error .ti { color: #f87171; }
 
-  /* ── MISC ── */
+
   .spacer-12 { height: 12px; }
   .spacer-20 { height: 20px; }
   .spacer-28 { height: 28px; }
@@ -826,7 +817,6 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="nav-logo" onclick="goScreen('home')">
     <div class="nav-logo-icon">🛂</div>
@@ -848,10 +838,9 @@
   </div>
 </nav>
 
-<!-- ===== SCREEN: HOME ===== -->
 <div class="screen active" id="screen-home">
 
-  <!-- HERO -->
+
   <section class="hero">
     <div class="hero-content">
       <div class="hero-badge">🇮🇳 Official Passport Services Portal</div>
@@ -900,7 +889,6 @@
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
   <section class="section-home">
     <div class="section-tag">Simple Process</div>
     <h2 class="section-title">Apply in 4 easy steps</h2>
@@ -945,7 +933,7 @@
     </div>
   </section>
 
-  <!-- FEATURES STRIP -->
+  
   <div class="features-strip">
     <div class="feature-item">
       <div class="fi">🔒</div>
@@ -980,7 +968,6 @@
   </footer>
 </div>
 
-<!-- ===== SCREEN: AUTH ===== -->
 <div class="screen" id="screen-auth">
   <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:80px 20px;background:var(--navy);">
     <div class="auth-card">
@@ -994,7 +981,7 @@
         <button class="auth-tab" onclick="switchTab('signup')">Create Account</button>
       </div>
 
-      <!-- LOGIN -->
+  
       <div class="auth-panel active" id="panel-login">
         <div class="form-group">
           <label class="form-label">Mobile Number</label>
@@ -1035,7 +1022,6 @@
         </div>
       </div>
 
-      <!-- SIGNUP -->
       <div class="auth-panel" id="panel-signup">
         <div class="form-group">
           <label class="form-label">Full Name</label>
@@ -1060,7 +1046,7 @@
   </div>
 </div>
 
-<!-- ===== SCREEN: ONBOARD ===== -->
+
 <div class="screen" id="screen-onboard">
   <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:80px 20px;background:linear-gradient(135deg, var(--navy) 0%, #1a3564 100%);">
     <div class="onboard-card">
@@ -1069,7 +1055,7 @@
         <div class="onboard-step pending" id="ob2"></div>
         <div class="onboard-step pending" id="ob3"></div>
       </div>
-      <!-- STEP 1 -->
+   
       <div id="ob-step-1">
         <div class="onboard-icon">👋</div>
         <h2>Welcome to PassportEase</h2>
@@ -1095,7 +1081,7 @@
         <div class="time-badge">⏱️ Total estimated time: 12–15 minutes · You can save and resume anytime</div>
         <button class="btn-full" onclick="obNext(1)">Let's Begin →</button>
       </div>
-      <!-- STEP 2 -->
+     
       <div id="ob-step-2" style="display:none;">
         <div class="onboard-icon">📋</div>
         <h2>What type of passport?</h2>
@@ -1120,7 +1106,7 @@
         </div>
         <button class="btn-full" onclick="obNext(2)">Continue →</button>
       </div>
-      <!-- STEP 3 -->
+  
       <div id="ob-step-3" style="display:none;">
         <div class="onboard-icon">📁</div>
         <h2>Documents you'll need</h2>
@@ -1151,7 +1137,7 @@
   </div>
 </div>
 
-<!-- ===== SCREEN: DASHBOARD ===== -->
+
 <div class="screen" id="screen-dashboard">
   <div class="dashboard-layout">
     <aside class="sidebar">
@@ -1240,7 +1226,7 @@
         </div>
       </div>
 
-      <!-- STATUS TRACKER -->
+      
       <div class="application-card">
         <div class="app-card-header">
           <h3>Application Status · APP-2025-INR-48291</h3>
@@ -1279,10 +1265,9 @@
   </div>
 </div>
 
-<!-- ===== SCREEN: FORM ===== -->
 <div class="screen" id="screen-form">
   <div class="form-layout">
-    <!-- PROGRESS -->
+ 
     <div class="form-progress-bar">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
         <div>
@@ -1315,7 +1300,7 @@
       <span id="autosaveTime">Last saved at 2:30 PM · Step 1 of 5</span>
     </div>
 
-    <!-- STEP 1: Personal Info -->
+
     <div id="form-step-1">
       <div class="form-card">
         <h3 class="form-card-title">Personal Information</h3>
@@ -1425,7 +1410,7 @@
       </div>
     </div>
 
-    <!-- STEP 2: Family -->
+
     <div id="form-step-2" style="display:none;">
       <div class="form-card">
         <h3 class="form-card-title">Family Information</h3>
@@ -1495,7 +1480,7 @@
       </div>
     </div>
 
-    <!-- STEP 3: Documents -->
+  
     <div id="form-step-3" style="display:none;">
       <div class="form-card">
         <h3 class="form-card-title">Document Upload</h3>
@@ -1571,7 +1556,7 @@
       </div>
     </div>
 
-    <!-- STEP 4: Appointment -->
+
     <div id="form-step-4" style="display:none;">
       <div class="form-card">
         <h3 class="form-card-title">Book Your Appointment</h3>
@@ -1708,7 +1693,6 @@
       </div>
     </div>
 
-    <!-- STEP 5: Review -->
     <div id="form-step-5" style="display:none;">
       <div class="form-card">
         <h3 class="form-card-title">Review Your Application</h3>
@@ -1758,7 +1742,6 @@
   </div>
 </div>
 
-<!-- ===== SCREEN: CONFIRM ===== -->
 <div class="screen" id="screen-confirm">
   <div class="confirm-layout">
     <div class="confirm-card">
@@ -1802,21 +1785,21 @@
   </div>
 </div>
 
-<!-- TOAST -->
+
 <div class="toast" id="toast">
   <span class="ti" id="toast-icon">✅</span>
   <span id="toast-msg">Saved successfully</span>
 </div>
 
 <script>
-  // ── STATE ──
+
   let currentUser = null;
   let currentFormStep = 1;
   let selectedDate = 'Jan 22, 2025';
   let selectedTime = '10:30 AM';
   let autosaveInterval;
 
-  // ── SCREEN ROUTING ──
+
   function goScreen(id) {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     document.getElementById('screen-' + id).classList.add('active');
@@ -1835,7 +1818,7 @@
     }
   }
 
-  // ── AUTH ──
+
   function switchTab(t) {
     document.querySelectorAll('.auth-tab').forEach((b,i) => b.classList.toggle('active', (i===0&&t==='login')||(i===1&&t==='signup')));
     document.getElementById('panel-login').classList.toggle('active', t==='login');
@@ -1846,7 +1829,7 @@
     document.getElementById('otp-section-login').style.display = 'block';
     document.getElementById('btn-send-otp').textContent = '✓ OTP Sent to +91 98765 43210';
     document.getElementById('btn-send-otp').style.background = 'var(--green)';
-    // Auto-fill OTP for demo
+
     ['o1','o2','o3','o4','o5','o6'].forEach((id,i)=>{
       document.getElementById(id).value = ['1','2','3','4','5','6'][i];
     });
@@ -1900,7 +1883,7 @@
     showToast('success','👋 Signed out successfully');
   }
 
-  // ── ONBOARDING ──
+
   function obNext(step) {
     document.getElementById('ob-step-' + step).style.display = 'none';
     document.getElementById('ob' + step).classList.remove('active');
@@ -1916,7 +1899,7 @@
     el.classList.add('selected');
   }
 
-  // ── FORM ──
+
   const stepTitles = [
     'Step 1 of 5 — Personal Information',
     'Step 2 of 5 — Family Details',
@@ -1973,7 +1956,6 @@
     document.getElementById('autosaveTime').textContent = 'Last saved at ' + t + ' · Step ' + currentFormStep + ' of 5';
   }
 
-  // ── DOCUMENT UPLOAD ──
   function fakeUpload(docId, btn) {
     btn.textContent = 'Uploading...';
     btn.disabled = true;
@@ -1987,7 +1969,6 @@
     }, 1200);
   }
 
-  // ── APPOINTMENT ──
   function selectDate(el, date) {
     document.querySelectorAll('.cal-day.selected').forEach(d=>d.classList.remove('selected'));
     el.classList.add('selected');
@@ -2013,7 +1994,6 @@
     document.getElementById('sum-psk').textContent = sel.value;
   }
 
-  // ── SUBMIT ──
   function submitApplication() {
     const decl = document.getElementById('declaration');
     if(!decl.checked) {
@@ -2024,10 +2004,9 @@
     setTimeout(() => { goScreen('confirm'); }, 1200);
   }
 
-  // ── EXPORT ──
   function downloadPDF() {
     showToast('success','⬇️ Application PDF is being generated and downloaded!');
-    // In a real app, generate PDF via backend
+
     setTimeout(() => {
       const a = document.createElement('a');
       a.href = '#';
@@ -2041,7 +2020,7 @@
     showToast('success','📋 Application ID copied to clipboard!');
   }
 
-  // ── TOAST ──
+
   let toastTimeout;
   function showToast(type, msg) {
     const t = document.getElementById('toast');
@@ -2055,20 +2034,20 @@
     toastTimeout = setTimeout(() => t.classList.remove('show'), 3500);
   }
 
-  // ── RADIO ──
+
   function selectRadio(el, group) {
     el.closest('.radio-group').querySelectorAll('.radio-option').forEach(r => r.classList.remove('selected'));
     el.classList.add('selected');
   }
 
-  // OTP auto-tab
+
   document.querySelectorAll('.otp-input').forEach((inp, idx, arr) => {
     inp.addEventListener('input', () => {
       if(inp.value && idx < arr.length - 1) arr[idx+1].focus();
     });
   });
 
-  // Init
+  
   updateAutosaveTime();
   setInterval(updateAutosaveTime, 60000);
 </script>
